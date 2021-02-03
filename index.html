@@ -1,0 +1,50 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css"> 
+    <title>resume builder</title>
+</head>
+<body class="container">
+    <div class="container">
+        <h3 class="text-center">User Details</h3>
+    </div>
+    <form id="myform">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" placeholder="name" id="name"> 
+        </div>
+        <div class="form-group">
+            <label for="Email">Email:</label>
+            <input type="email" class="form-control" placeholder="email" id="email"> 
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone no:</label>
+            <input type="number" class="form-control" placeholder="phone" id="phone"> 
+        </div>        
+        <div class="form-group">
+            <label for="qualification">Qualification:</label>
+            <div id="qualification"></div>
+            <input type="text" class="form-control" placeholder="degree" id="degree">
+            <input type="text" class="form-control" placeholder="specialization" id="specialization">
+            <input type="number" class="form-control" placeholder="start year" id="startyear">
+            <input type="number" class="form-control" placeholder="end year" id="endyear"> 
+            <br>
+            <button class="btn btn-sm btn-primary" type="button" id="qual"> Add entry</button>
+        </div>
+        <div class="form-group">
+            
+            <label for="project">Projects:</label>
+            <div id="projects-list"></div>
+            <input type="text" class="form-control" placeholder="title" id="title">
+            <textarea class="form-control" id="description" row="1" placeholder="description"></textarea>
+            <textarea class="form-control" id="skill" row="1" placeholder="skills"></textarea>
+            <br>
+            <button class="btn btn-sm btn-primary" id="project" type="button">Add entry</button>
+        </div>
+        <button class="btn btn-warning" id="submit" type="submit">Submit</button>
+    </form>
+    <script src="validate.js"></script>
+    <script src="script.js"></script>
+
+</body></html>
